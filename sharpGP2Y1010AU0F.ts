@@ -2,7 +2,7 @@
  * Sharp GP2Y1010AU0F Dust Sensor extension for calliope.
  * WAVESHARE module edition. 
  * https://www.waveshare.com/dust-sensor.htm
- *
+ * 
  * @author Raik Andritschke
  *
  * Optional using nRF51 Internal voltage reference instead of VDD
@@ -74,7 +74,7 @@ namespace sharpGP2Y1010AU0F {
         return voltage * WAVESHARE_DIVIDER;
     }
 
-    //% blockId="getDustValue" block="get dust value in μg/m3 from dustsensor."
+    //% blockId="getDustValue" block="get dust value in μg/m³ from dustsensor."
     export function getDustValue(): number {
         let dust = 0.0;
         dust = (getSensorRAWValue() - NODUST_VOLTAGE) * CONVERSION_RATIO / 100;
