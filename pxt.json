@@ -10,11 +10,14 @@
         "sharpGP2Y1010AU0F.ts",
         "ADCConfig.ts",
         "ADCConfig.cpp",
-	"ext_pins.ts"
+        "ext_pins.ts"
     ],
     "testFiles": [
         "test.ts"
     ],
     "public": false,
+    "supportedTargets": [
+        "microbit"
+    ],
     "preferredEditor": "tsprj"
 }

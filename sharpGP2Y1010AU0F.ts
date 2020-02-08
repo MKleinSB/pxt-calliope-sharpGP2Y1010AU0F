@@ -7,7 +7,8 @@
  *
  * Optional using nRF51 Internal voltage reference instead of VDD
  */
-//% weight=10 color=#0fbc11 icon=""
+//% weight=10 color=#2E2E2E icon="\uf0c2"
+//% block="sharpGP2Y1010AU0F"
 namespace sharpGP2Y1010AU0F {
     export enum ReferenceVoltage {
 	//% block=Internal Reference Voltage
@@ -33,11 +34,10 @@ namespace sharpGP2Y1010AU0F {
     //% vo.defl=AnalogPin.P2
     //% samples.defl=10    
     //% reference.defl=REFERENCE_VOLTAGE_EXT
-    export function initDustSensor(vled: DigitalPin, vo: AnalogPin, samples: number, reference: ReferenceVoltage) {
+    export function initDustSensor(vled: DigitalPin, vo: AnalogPin, samples: number) {
         VLED = vled;
         VO = vo;
         SAMPLES = samples;
-	REFERENCE_VOLTAGE = reference;
     }
 
     //% blockId="getSensorRAWValue" block="get RAW value in mV from dustsensor"
